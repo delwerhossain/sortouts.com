@@ -1,0 +1,72 @@
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#26262c;
+    display:none;
+  }  
+  #boxes .window {
+    position:absolute;
+    left:0;
+    top:0;
+    width:440px;
+    height:850px;
+    display:none;
+    z-index:9999;
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #boxes #dialog {
+    width:450px; 
+    height:auto;
+    padding: 10px 10px 10px 10px;
+    background-color:#ffffff;
+    font-size: 15pt;
+
+    top: 50%; 
+    left: 50%; 
+    display: none;
+  }
+  
+  .agree:hover{
+    background-color: #D1D1D1;
+  }
+  .popupoption:hover{
+   background-color:#D1D1D1;
+   color: green;
+  }
+  .popupoption2:hover{
+   color: red;
+  }
+
+  /* Tablet Layout */
+@media (min-width: 768px) and (max-width: 991px) {
+  #boxes #dialog {
+      width: 350px;
+      height: auto;
+      padding: 10px 10px 10px 10px;
+      background-color: #ffffff;
+      font-size: 15pt;
+    
+    top: 300px !important;
+      left: 215px !important;
+      display: block;
+  }
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 450px) {
+  #boxes #dialog {
+      width: 350px;
+      height: auto;
+      padding: 10px 10px 10px 10px;
+      background-color: #ffffff;
+      font-size: 15pt;
+    
+    top: 222px !important;
+      left: 12px !important;
+      display: block;
+  }
+  }
